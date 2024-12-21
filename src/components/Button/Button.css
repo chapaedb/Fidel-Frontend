@@ -1,0 +1,100 @@
+@import '../../index.css';
+
+button {
+    padding: 16px 24px;
+    border-radius: 10px;
+    font-family: var(--text-primary);
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+button .arrow {
+    opacity: 0;
+    margin-left: 8px;
+    transition: opacity 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+}
+
+button:hover .arrow {
+    opacity: 1;
+    margin-left: 16px;
+}
+
+.purple.outline {
+    border: 1.5px solid var(--accent-color-primary);
+    color: var(--accent-color-primary);
+}
+
+.purple.outline:hover {
+    background-color: var(--accent-color-primary);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--accent-color-primary);
+}
+
+.purple.fill {
+    background-color: var(--accent-color-primary);
+    color: white;
+}
+
+.purple.fill:hover {
+    background-color: white;
+    color: var(--accent-color-primary);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--accent-color-primary);
+}
+
+.white.outline {
+    border: 1.5px solid white;
+    color: white;
+}
+
+.white.outline:hover {
+    background-color: white;
+    color: var(--accent-color-primary);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+}
+
+.white.fill {
+    background-color: white;
+    color: transparent;
+}
+
+.white.fill:hover {
+    background-color: var(--accent-color-primary);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+}
+
+.yellow.outline {
+    border: 1.5px solid var(--accent-color-secondary);
+    color: var(--accent-color-secondary);
+}
+
+.yellow.outline:hover {
+    background-color: var(--accent-color-secondary);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--accent-color-secondary);
+}
+
+.yellow.fill {
+    background-color: var(--accent-color-secondary);
+    color: white;
+}
+
+.yellow.fill:hover {
+    background-color: white;
+    color: var(--accent-color-secondary);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--accent-color-secondary);
+}

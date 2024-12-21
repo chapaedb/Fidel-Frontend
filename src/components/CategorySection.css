@@ -1,0 +1,45 @@
+@import '../index.css';
+
+.category-section {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.view {
+    display: none;
+}
+
+.header h1 {
+    font-family: var(--text-primary);
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.carousel-container {
+    justify-content: space-between;
+}
+
+.carousel-container li {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+    .header .view-all {
+        display: none;
+    }
+
+    .category-section {
+        padding: 1.25rem;
+    }
+
+    .view {
+        display: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.25rem;
+    }
+}

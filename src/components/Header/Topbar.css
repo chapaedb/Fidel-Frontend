@@ -1,0 +1,247 @@
+@import '../../index.css';
+
+@media (max-width: 767.98px) {
+    .topbar {
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .topbar {
+        width: 100%;
+        background-color: var(--accent-color-primary);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--text-secondary);
+        font-size: medium;
+        padding: 20px 100px;
+    }
+
+    .topbar h1 {
+        color: var(--text-color-light);
+        font-size: small;
+        font-weight: 400;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .topbar h1::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: var(--accent-color-secondary);
+        transition: width 0.3s ease;
+    }
+
+    .topbar h1:hover {
+        color: var(--accent-color-secondary);
+    }
+
+    .topbar h1:hover::after {
+        width: 100%;
+    }
+
+    .topbar img {
+        height: 16px;
+        width: auto;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .topbar img:hover {
+        transform: scale(1.1);
+        filter: brightness(0.8);
+    }
+
+    .language-button {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .action-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+    }
+    
+    .action-links img {
+        height: 24px;
+        width: auto;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .action-links a.icon-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+    }
+
+    .action-links a.icon-link:hover {
+        background-color: rgba(67, 10, 70, 0.8);
+    }
+
+    .action-links .divider {
+        height: 24px;
+        width: 1px;
+        background-color: var(--text-color-light);
+    }
+
+    .action-links a.text-link {
+        color: var(--text-color-light);
+        text-decoration: none;
+        font-size: small;
+        font-weight: 400;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .action-links a.text-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: var(--accent-color-secondary);
+        transition: width 0.3s ease;
+    }
+
+    .action-links a.text-link:hover {
+        color: var(--accent-color-secondary);
+    }
+
+    .action-links a.text-link:hover::after {
+        width: 100%;
+    }
+}
+
+@media (min-width: 960px){
+    .topbar {
+        width: 100%;
+        background-color: var(--accent-color-primary);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--text-secondary);
+        font-size: medium;
+        padding: 20px 100px;
+    }
+
+    .topbar h1 {
+        color: var(--text-color-light);
+        font-size: small;
+        font-weight: 400;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .topbar h1::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: var(--accent-color-secondary);
+        transition: width 0.3s ease;
+    }
+
+    .topbar h1:hover {
+        color: var(--accent-color-secondary);
+    }
+
+    .topbar h1:hover::after {
+        width: 100%;
+    }
+
+    .topbar img {
+        height: 16px;
+        width: auto;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .topbar img:hover {
+        transform: scale(1.1);
+        filter: brightness(0.8);
+    }
+
+    .language-button {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .action-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 25%;
+    }
+    
+    .action-links img {
+        height: 24px;
+        width: auto;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .action-links a.icon-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+    }
+
+    .action-links a.icon-link:hover {
+        background-color: rgba(67, 10, 70, 0.8);
+    }
+
+    .action-links .divider {
+        height: 24px;
+        width: 1px;
+        background-color: var(--text-color-light);
+    }
+
+    .action-links a.text-link {
+        color: var(--text-color-light);
+        font-size: small;
+        font-weight: 400;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .action-links a.text-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: var(--accent-color-secondary);
+        transition: width 0.3s ease;
+    }
+
+    .action-links a.text-link:hover {
+        color: var(--accent-color-secondary);
+    }
+
+    .action-links a.text-link:hover::after {
+        width: 100%;
+    }
+}

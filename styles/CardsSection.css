@@ -1,0 +1,65 @@
+@import './index.css';
+
+section {
+    padding: 50px 100px;
+}
+
+.header {
+    padding: 1.25rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-family: var(--text-primary);
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.course-container > div {
+    flex: 1 1 calc(33.333% - 1.5rem);
+    max-width: calc(33.333% - 1.5rem);
+}
+
+.view {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    .course-container > div {
+        flex: 1 1 calc(50% - 1.5rem);
+        max-width: calc(50% - 1.5rem);
+    }
+}
+
+@media (max-width: 767.98px) {
+    section {
+        padding: 3rem 1.25rem;
+    }
+    
+    .course-container > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .header .view-all {
+        display: none;
+    }
+
+    .view {
+        display: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.25rem;
+    }
+}

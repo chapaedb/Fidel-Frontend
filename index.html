@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>title</title>
+</head>
+
+<body>
+  <!-- topbar.html -->
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/Topbar.css">
+    <link rel="stylesheet" href="styles/Navbar.css">
+    <link rel="stylesheet" href="styles/Navbar.css">
+    <link rel="stylesheet" href="styles/HeroSection.css">
+    <script src="scripts/hero-section.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/topbar.js"></script>
+    <link rel="stylesheet" href="styles/Button.css">
+    <link rel="stylesheet" href="styles/CourseCard.css">
+    <link rel="stylesheet" href="styles/CardsSection.css">
+    <link rel="stylesheet" href="styles/DownloadSection.css">
+    <link rel="stylesheet" href="styles/Testimonials.css">
+    <link rel="stylesheet" href="styles/CtaSection.css">
+    <link rel="stylesheet" href="styles/Footer.css">
+    <title>Topbar</title>
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <button class="language-button">
+        <img src="src/assets/icons/Geography.png" alt="globe icon" />
+        <h1>English</h1>
+        <img src="src/assets/icons/ExpandArrow.png" alt="drop down icon" />
+      </button>
+      <div class="action-links">
+        <a href="#" class="icon-link">
+          <img src="src/assets/icons/Cart.png" alt="cart icon" />
+        </a>
+        <a href="#" class="icon-link">
+          <img src="src/assets/icons/Notification.png" alt="notification icon" />
+        </a>
+        <div class="divider"></div>
+        <a href="#" class="text-link">
+          <h1>Login</h1>
+        </a>
+        <a href="#" class="text-link">
+          <h1>Register</h1>
+        </a>
+      </div>
+    </div>
+
+    <script src="topbar.js"></script>
+    <nav>
+      <a href="#">
+        <img src="src/assets/images/logo.png" alt="logo" />
+      </a>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Find Tutor</a></li>
+          <li><a href="#">About Us</a></li>
+          <li class="dropdown">
+            <a href="#">Categories</a>
+            <div class="dropdown-content">
+              <a href="#">Category 1</a>
+              <a href="#">Category 2</a>
+              <a href="#">Category 3</a>
+              <a href="#">Category 4</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="menu-toggle">
+        <img src="src/assets/icons/menu.png" alt="menu icon" />
+      </button>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <button class="search-toggle">
+          <img src="src/assets/icons/Search.png" alt="search icon" />
+        </button>
+      </div>
+    </nav>
+
+    <script src="navbar.js"></script>
+    <section class="hero-section">
+      <div class="hero-left">
+        <h1>With Fidel <br /> Excitement for Learning is Boosted!</h1>
+        <div class="CTAs">
+          <!-- Inside hero-section.html -->
+          <button class="button yellow fill" onclick="handleClick('Enroll Now')">Enroll Now</button>
+          <button class="button purple outline" onclick="handleClick('View All Courses')">View All Courses</button>
+
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="left">
+          <div class="box1">
+            <img src="public/images/student1.png" alt="Student 1" />
+          </div>
+          <div class="box2">
+            <h1 class="counter" data-target="21000">0</h1>
+            <p>Happy Students</p>
+          </div>
+          <div class="box3">
+            <img src="public/images/student2.png" alt="Student 2" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="box4">
+            <h1 class="counter" data-target="32">0</h1>
+            <p>Skillfull Instructors</p>
+          </div>
+          <div class="box5">
+            <video class="background-clip" src="public/videos/tutor.mp4" autoplay loop muted></video>
+            <p>Live Classes</p>
+          </div>
+          <div class="box6">
+            <div class="innerbox1">
+              <video class="background-clip" src="public/videos/globe.mp4" autoplay loop muted></video>
+            </div>
+            <div class="innerbox2">
+              <h1 class="counter" data-target="56">0</h1>
+              <p>Video Courses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ######### Latest Courses Section ######### -->
+    <section>
+      <div class="header">
+        <h1>Latest Courses</h1>
+        <div class="view-all">
+          <button class="btn yellow outline">View All</button>
+        </div>
+      </div>
+      <div class="course-container responsive">
+        <div class="card">
+          <div class="thumbnail">
+            <img src="./public/images/course1.png" alt="course thumbnail">
+          </div>
+          <div class="course-info">
+            <div class="course-heading">
+              <div>
+                <img src="./public/images/Fidel.png" alt="">
+                <h2>By Fidel Admin</h2>
+              </div>
+              <h2>November 15 2024</h2>
+            </div>
+            <div class="course-title">
+              <h1>Grade 11 History</h1>
+              <p>Chapter 1 | Part One</p>
+            </div>
+            <div class="course-details">
+              <div class="card-left">
+                <div class="rating">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/half-star.png" alt="half star">
+                  <span>(5323)</span>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Time.png" alt="duration">
+                  <h2>1:05hrs</h2>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Category.png" alt="category">
+                  <h2>Grade 11</h2>
+                </div>
+              </div>
+              <div class="card-right">
+                <h1>700ETB</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="./public/images/course1.png" alt="course thumbnail">
+          </div>
+          <div class="course-info">
+            <div class="course-heading">
+              <div>
+                <img src="./public/images/Fidel.png" alt="">
+                <h2>By Fidel Admin</h2>
+              </div>
+              <h2>November 15 2024</h2>
+            </div>
+            <div class="course-title">
+              <h1>Grade 11 History</h1>
+              <p>Chapter 1 | Part One</p>
+            </div>
+            <div class="course-details">
+              <div class="card-left">
+                <div class="rating">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/half-star.png" alt="half star">
+                  <span>(5323)</span>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Time.png" alt="duration">
+                  <h2>1:05hrs</h2>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Category.png" alt="category">
+                  <h2>Grade 11</h2>
+                </div>
+              </div>
+              <div class="card-right">
+                <h1>700ETB</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="./public/images/course1.png" alt="course thumbnail">
+          </div>
+          <div class="course-info">
+            <div class="course-heading">
+              <div>
+                <img src="./public/images/Fidel.png" alt="">
+                <h2>By Fidel Admin</h2>
+              </div>
+              <h2>November 15 2024</h2>
+            </div>
+            <div class="course-title">
+              <h1>Grade 11 History</h1>
+              <p>Chapter 1 | Part One</p>
+            </div>
+            <div class="course-details">
+              <div class="card-left">
+                <div class="rating">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/half-star.png" alt="half star">
+                  <span>(5323)</span>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Time.png" alt="duration">
+                  <h2>1:05hrs</h2>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Category.png" alt="category">
+                  <h2>Grade 11</h2>
+                </div>
+              </div>
+              <div class="card-right">
+                <h1>700ETB</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view">
+        <button class="btn purple outline">View All</button>
+      </div>
+    </section>
+
+
+    <!-- ######### Top Courses Section ######### -->
+    <section>
+      <div class="header">
+        <h1>Top Rated</h1>
+        <div class="view-all">
+          <button class="btn yellow outline">View All</button>
+        </div>
+      </div>
+      <div class="course-container responsive">
+        <div class="card">
+          <div class="thumbnail">
+            <img src="./public/images/course1.png" alt="course thumbnail">
+          </div>
+          <div class="course-info">
+            <div class="course-heading">
+              <div>
+                <img src="./public/images/Fidel.png" alt="">
+                <h2>By Fidel Admin</h2>
+              </div>
+              <h2>November 15 2024</h2>
+            </div>
+            <div class="course-title">
+              <h1>Grade 11 History</h1>
+              <p>Chapter 1 | Part One</p>
+            </div>
+            <div class="course-details">
+              <div class="card-left">
+                <div class="rating">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/half-star.png" alt="half star">
+                  <span>(5323)</span>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Time.png" alt="duration">
+                  <h2>1:05hrs</h2>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Category.png" alt="category">
+                  <h2>Grade 11</h2>
+                </div>
+              </div>
+              <div class="card-right">
+                <h1>700ETB</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="./public/images/course1.png" alt="course thumbnail">
+          </div>
+          <div class="course-info">
+            <div class="course-heading">
+              <div>
+                <img src="./public/images/Fidel.png" alt="">
+                <h2>By Fidel Admin</h2>
+              </div>
+              <h2>November 15 2024</h2>
+            </div>
+            <div class="course-title">
+              <h1>Grade 11 History</h1>
+              <p>Chapter 1 | Part One</p>
+            </div>
+            <div class="course-details">
+              <div class="card-left">
+                <div class="rating">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/half-star.png" alt="half star">
+                  <span>(5323)</span>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Time.png" alt="duration">
+                  <h2>1:05hrs</h2>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Category.png" alt="category">
+                  <h2>Grade 11</h2>
+                </div>
+              </div>
+              <div class="card-right">
+                <h1>700ETB</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="./public/images/course1.png" alt="course thumbnail">
+          </div>
+          <div class="course-info">
+            <div class="course-heading">
+              <div>
+                <img src="./public/images/Fidel.png" alt="">
+                <h2>By Fidel Admin</h2>
+              </div>
+              <h2>November 15 2024</h2>
+            </div>
+            <div class="course-title">
+              <h1>Grade 11 History</h1>
+              <p>Chapter 1 | Part One</p>
+            </div>
+            <div class="course-details">
+              <div class="card-left">
+                <div class="rating">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/half-star.png" alt="half star">
+                  <span>(5323)</span>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Time.png" alt="duration">
+                  <h2>1:05hrs</h2>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Category.png" alt="category">
+                  <h2>Grade 11</h2>
+                </div>
+              </div>
+              <div class="card-right">
+                <h1>700ETB</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view">
+        <button class="btn purple outline">View All</button>
+      </div>
+    </section>
+
+    <!-- ######### Free Courses Section ######### -->
+    <section>
+      <div class="header">
+        <h1>Free Courses</h1>
+        <div class="view-all">
+          <button class="btn yellow outline">View All</button>
+        </div>
+      </div>
+      <div class="course-container responsive">
+        <div class="card">
+          <div class="thumbnail">
+            <img src="./public/images/course1.png" alt="course thumbnail">
+          </div>
+          <div class="course-info">
+            <div class="course-heading">
+              <div>
+                <img src="./public/images/Fidel.png" alt="">
+                <h2>By Fidel Admin</h2>
+              </div>
+              <h2>November 15 2024</h2>
+            </div>
+            <div class="course-title">
+              <h1>Grade 11 History</h1>
+              <p>Chapter 1 | Part One</p>
+            </div>
+            <div class="course-details">
+              <div class="card-left">
+                <div class="rating">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/half-star.png" alt="half star">
+                  <span>(5323)</span>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Time.png" alt="duration">
+                  <h2>1:05hrs</h2>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Category.png" alt="category">
+                  <h2>Grade 11</h2>
+                </div>
+              </div>
+              <div class="card-right">
+                <h1>700ETB</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="./public/images/course1.png" alt="course thumbnail">
+          </div>
+          <div class="course-info">
+            <div class="course-heading">
+              <div>
+                <img src="./public/images/Fidel.png" alt="">
+                <h2>By Fidel Admin</h2>
+              </div>
+              <h2>November 15 2024</h2>
+            </div>
+            <div class="course-title">
+              <h1>Grade 11 History</h1>
+              <p>Chapter 1 | Part One</p>
+            </div>
+            <div class="course-details">
+              <div class="card-left">
+                <div class="rating">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/half-star.png" alt="half star">
+                  <span>(5323)</span>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Time.png" alt="duration">
+                  <h2>1:05hrs</h2>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Category.png" alt="category">
+                  <h2>Grade 11</h2>
+                </div>
+              </div>
+              <div class="card-right">
+                <h1>700ETB</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="./public/images/course1.png" alt="course thumbnail">
+          </div>
+          <div class="course-info">
+            <div class="course-heading">
+              <div>
+                <img src="./public/images/Fidel.png" alt="">
+                <h2>By Fidel Admin</h2>
+              </div>
+              <h2>November 15 2024</h2>
+            </div>
+            <div class="course-title">
+              <h1>Grade 11 History</h1>
+              <p>Chapter 1 | Part One</p>
+            </div>
+            <div class="course-details">
+              <div class="card-left">
+                <div class="rating">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/Star.png" alt="star">
+                  <img src="./public/images/half-star.png" alt="half star">
+                  <span>(5323)</span>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Time.png" alt="duration">
+                  <h2>1:05hrs</h2>
+                </div>
+                <div class="detail">
+                  <img src="./public/images/Category.png" alt="category">
+                  <h2>Grade 11</h2>
+                </div>
+              </div>
+              <div class="card-right">
+                <h1>700ETB</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view">
+        <button class="btn purple outline">View All</button>
+      </div>
+    </section>
+
+
+    <!-- ######### Download App Section ######### -->
+    <div class="download-section">
+      <h1>Download <br />Our App</h1>
+      <div class="cta-container">
+        <div class="mockup">
+          <img src="public/images/Mockup.png" alt="App Mockup">
+        </div>
+        <div class="button-container">
+          <button>
+            <div>
+              <img src="public/images/GooglePlay.png" alt="Google Play">
+              <h2>Google Play</h2>
+            </div>
+            <img class="arrow" src="public/images/RightArrow.png" alt="Arrow">
+          </button>
+          <button>
+            <div>
+              <img src="public/images/AppStore.png" alt="App Store">
+              <h2>App Store</h2>
+            </div>
+            <img class="arrow" src="public/images/RightArrow.png" alt="Arrow">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ######### Testimonials Section ######### -->
+
+    <div class="testimonials">
+      <h1>Testimonials</h1>
+      <div class="testimonial-container">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            <div>
+              <img src="public/images/quotes.png" alt="quotes">
+              <p>"As a long-time user of Fidel Tutor, I can confidently say that their courses have revolutionized the
+                way I learn. The instructors are knowledgeable and the content is engaging. I have seen a significant
+                improvement in my skills."</p>
+            </div>
+            <div>
+              <h2>Artemisia Udinese</h2>
+              <h3>Marketing Specialist</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div>
+              <img src="public/images/quotes.png" alt="quotes">
+              <p>"Fidel Tutor offers a wide range of courses that are perfect for anyone looking to expand their
+                knowledge. The platform is user-friendly and the support team is always ready to help. Highly
+                recommend!"</p>
+            </div>
+            <div>
+              <h2>Jasper Camembert</h2>
+              <h3>Software Engineer</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div>
+              <img src="public/images/quotes.png" alt="quotes">
+              <p>"I love the flexibility that Fidel Tutor provides. I can learn at my own pace and revisit the material
+                whenever I need to. The live classes are a great way to interact with instructors and other students."
+              </p>
+            </div>
+            <div>
+              <h2>Milo Provolone</h2>
+              <h3>Web Developer</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div>
+              <img src="public/images/quotes.png" alt="quotes">
+              <p>"Great experience overall! The video courses are well-structured and the instructors are very
+                supportive. I have gained a lot of practical knowledge that I can apply in my job."</p>
+            </div>
+            <div>
+              <h2>Cleo Brie</h2>
+              <h3>Product Manager</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div>
+              <img src="public/images/quotes.png" alt="quotes">
+              <p>"As a long-time user of Fidel Tutor, I can confidently say that their courses have revolutionized the
+                way I learn. The instructors are knowledgeable and the content is engaging. I have seen a significant
+                improvement in my skills."</p>
+            </div>
+            <div>
+              <h2>Artemisia Udinese</h2>
+              <h3>Marketing Specialist</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div>
+              <img src="public/images/quotes.png" alt="quotes">
+              <p>"Fidel Tutor offers a wide range of courses that are perfect for anyone looking to expand their
+                knowledge. The platform is user-friendly and the support team is always ready to help. Highly
+                recommend!"</p>
+            </div>
+            <div>
+              <h2>Jasper Camembert</h2>
+              <h3>Software Engineer</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div>
+              <img src="public/images/quotes.png" alt="quotes">
+              <p>"I love the flexibility that Fidel Tutor provides. I can learn at my own pace and revisit the material
+                whenever I need to. The live classes are a great way to interact with instructors and other students."
+              </p>
+            </div>
+            <div>
+              <h2>Milo Provolone</h2>
+              <h3>Web Developer</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div>
+              <img src="public/images/quotes.png" alt="quotes">
+              <p>"Great experience overall! The video courses are well-structured and the instructors are very
+                supportive. I have gained a lot of practical knowledge that I can apply in my job."</p>
+            </div>
+            <div>
+              <h2>Cleo Brie</h2>
+              <h3>Product Manager</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ######### CTA Section ######### -->
+
+    <section class="CTA-section">
+      <h1>Start learning anywhere, anytime...</h1>
+      <p>Use Fidel LMS to access high-quality education materials without any limitations in the easiest way.</p>
+      <div class="cta-button-container">
+        <button class="button fill purple">Get Started</button>
+        <button class="button outline white">Learn More</button>
+      </div>
+      <div class="email-section-container">
+        <div>
+          <h2>Join Us Today</h2>
+          <p>We will send the best deals and offers your way!</p>
+        </div>
+        <div class="email-input">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Join Us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ######### Footer Section ######### -->
+    <script src="hero-section.js"></script>
+    <!-- footer.html -->
+    <footer class="footer">
+      <div class="footer-top">
+        <!-- Logo Section -->
+        <div class="footer-section logo-section">
+          <img src="public/images/logo-white.png" alt="logo" />
+          <p>Passionate teachers ignite a love for learning. Enroll now to give your child a well-rounded education for
+            lifelong success!</p>
+        </div>
+
+        <!-- Additional Links Section -->
+        <div class="footer-section links-section">
+          <h1>Additional Links</h1>
+          <a class="link" href="#">Login</a>
+          <a class="link" href="#">Register</a>
+          <a class="link" href="#">Categories</a>
+          <a class="link" href="#">Certificate Validation</a>
+        </div>
+
+        <!-- Information Section -->
+        <div class="footer-section info-section">
+          <h1>Information</h1>
+          <a class="link" href="#">Terms & Conditions</a>
+          <a class="link" href="#">Privacy Policy</a>
+          <a class="link" href="#">FAQs</a>
+          <a class="link" href="#">Support</a>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="footer-section contact-section">
+          <h1>Contact Us</h1>
+          <div class="contact-container">
+            <div class="link-container">
+              <a class="link" href="#">Link 1</a>
+              <a class="link" href="#">Link 2</a>
+              <a class="link" href="#">Link 3</a>
+            </div>
+            <div class="social-icons">
+              <a href="#"><img src="public/images/Facebook.png" /></a>
+              <a href="#"><img src="public/images/Instagram.png" /></a>
+              <a href="#"><img src="public/images/TwitterX.png" /></a>
+              <a href="#"><img src="public/images/WhatsApp.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer Bottom Section -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Fidel Tutor. All rights reserved.</p>
+      </div>
+      <script>
+        const date = new Date();
+        const year = date.getFullYear();
+        document.getElementById("year").textContent = year;
+      </script>
+    </footer>
+
+  </body>
+
+  </html>
+
+</body>
+
+</html>

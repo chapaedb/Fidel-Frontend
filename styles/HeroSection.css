@@ -1,0 +1,457 @@
+@import 'index.css';
+
+/* Breakpoint 1: Mobile Devices */
+@media (max-width: 767.98px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 20px;
+        background: linear-gradient(84deg, rgba(254, 224, 255, 0.50) 9.64%, rgba(255, 243, 215, 0.50) 86.89%);
+        gap: 56px;
+    }
+
+    .hero-left {
+        max-height: fit-content;
+    }
+
+    .hero-section h1 {
+        font-family: var(--text-primary);
+        font-size: 3rem;
+        line-height: 60px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .CTAs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .hero-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .box1 {
+        display: none;
+    }
+
+    .box2 {
+        padding: 12px 36px;
+        background-color: var(--accent-color-primary);
+        border-radius: 100px;
+    }
+
+    .box3 {
+        display: none;
+    }
+
+    .hero-right h1 {
+        font-size: 2rem;
+        margin-bottom: -10px;
+        font-family: var(--text-secondary);
+        font-weight: 800;
+        color: var(--text-color-light);
+        text-align: left;
+    }
+
+    .hero-right p {
+        font-size: 1rem;
+        font-family: var(--text-secondary);
+        font-weight: 700;
+        color: var(--text-color-light);
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        flex: 1;
+    }
+
+    .box4 {
+        padding: 12px 32px;
+        background-color: var(--accent-color-primary);
+        border-radius: 100px;
+    }
+
+    .box5 {
+        position: relative;
+        flex: 1;
+        background: rgba(81, 45, 83, 0.92);
+        border-radius: 8%;
+        aspect-ratio: 1.5;
+        overflow: hidden;
+        padding: 12px 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .background-clip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: overlay;
+    }
+
+    .box6 {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .innerbox1 {
+        position: relative;
+        background-color: #5D0260;
+        flex-basis: 50%;
+        border-radius: 10%;
+        aspect-ratio: 1.5;
+        overflow: hidden;
+    }
+
+    .innerbox1 .background-clip{
+        mix-blend-mode: luminosity;
+    }
+
+    .innerbox2 {
+        flex-basis: 50%;
+        background-color: var(--accent-color-secondary);
+        border-radius: 10%;
+        padding: 12px 18px;
+        aspect-ratio: 1.5;
+    }
+}
+
+/* Breakpoint 2: Tablets */
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .hero-section {
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 5rem;
+        background: linear-gradient(84deg, rgba(254, 224, 255, 0.50) 9.64%, rgba(255, 243, 215, 0.50) 86.89%);
+        gap: 56px;
+    }
+
+    .hero-left {
+        max-height: fit-content;
+    }
+
+    .hero-section h1 {
+        font-family: var(--text-primary);
+        font-size: 3rem;
+        line-height: 60px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .CTAs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .hero-right {
+        display: flex;
+        gap: 1.5rem;
+        aspect-ratio: 1.05;
+        width: 100%;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .box1 {
+        position: relative;
+        aspect-ratio: square;
+        flex: 1;
+        flex-basis: 55%;
+        background-color: rgba(197, 172, 110, 0.8);
+        border-radius: 10%;
+        overflow: hidden;
+    }
+
+    .box1 img {
+        position: absolute;
+        mix-blend-mode: luminosity;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .box2 {
+        padding: 12px 36px;
+        background-color: var(--accent-color-primary);
+        border-radius: 100px;
+    }
+
+    .box3 {
+        position: relative;
+        aspect-ratio: square;
+        flex: 1;
+        flex-basis: 45%;
+        background-color: rgba(197, 172, 110, 0.8);
+        border-radius: 10%;
+        overflow: hidden;
+    }
+
+    .box3 img {
+        position: absolute;
+        mix-blend-mode: luminosity;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-right h1 {
+        font-size: 2rem;
+        margin-bottom: -10px;
+        font-family: var(--text-secondary);
+        font-weight: 800;
+        color: var(--text-color-light);
+    }
+
+    .hero-right p {
+        font-size: 1rem;
+        font-family: var(--text-secondary);
+        font-weight: 700;
+        color: var(--text-color-light);
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        flex: 1;
+    }
+
+    .box4 {
+        padding: 12px 32px;
+        background-color: var(--accent-color-primary);
+        border-radius: 100px;
+    }
+
+    .box5 {
+        position: relative;
+        flex: 1;
+        background: rgba(81, 45, 83, 0.92);
+        flex-basis: 60%;
+        border-radius: 8%;
+        overflow: hidden;
+        padding: 12px 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .background-clip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: overlay;
+    }
+
+    .box6 {
+        display: flex;
+        flex: 1;
+        flex-basis: 40%;
+        gap: 1.5rem;
+    }
+
+    .innerbox1 {
+        position: relative;
+        background-color: #5D0260;
+        flex-basis: 50%;
+        border-radius: 10%;
+        overflow: hidden;
+    }
+
+    .innerbox1 .background-clip{
+        mix-blend-mode: luminosity;
+    }
+
+    .innerbox2 {
+        flex-basis: 50%;
+        background-color: var(--accent-color-secondary);
+        border-radius: 10%;
+        padding: 12px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* Breakpoint 3: Desktop Size */
+@media (min-width: 1025px) {      
+    .hero-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 100px;
+        background: linear-gradient(84deg, rgba(254, 224, 255, 0.50) 9.64%, rgba(255, 243, 215, 0.50) 86.89%);
+    }
+
+    .hero-left {
+        width: 50%;
+        max-height: fit-content;
+    }
+
+    .hero-section h1 {
+        font-family: var(--text-primary);
+        font-size: 3rem;
+        line-height: 60px;
+        margin-bottom: 24px;
+    }
+
+    .CTAs {
+        display: flex;
+        gap: 24px;
+    }
+
+    .hero-right {
+        display: flex;
+        gap: 1.5rem;
+        width: 50%;
+        aspect-ratio: 1.05;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .box1 {
+        aspect-ratio: square;
+        flex: 1;
+        flex-basis: 55%;
+        background-color: rgba(197, 172, 110, 0.8);
+        border-radius: 10%;
+        overflow: hidden;
+    }
+
+    .box1 img {
+        mix-blend-mode: luminosity;
+    }
+
+    .box2 {
+        padding: 12px 36px;
+        background-color: var(--accent-color-primary);
+        border-radius: 100px;
+    }
+
+    .box3 {
+        aspect-ratio: square;
+        flex: 1;
+        flex-basis: 45%;
+        background-color: rgba(197, 172, 110, 0.8);
+        border-radius: 10%;
+        overflow: hidden;
+    }
+
+    .box3 img {
+        mix-blend-mode: luminosity;
+    }
+
+    .hero-right h1 {
+        font-size: 2rem;
+        margin-bottom: -10px;
+        font-family: var(--text-secondary);
+        font-weight: 800;
+        color: var(--text-color-light);
+    }
+
+    .hero-right p {
+        font-size: 1rem;
+        font-family: var(--text-secondary);
+        font-weight: 700;
+        color: var(--text-color-light);
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        flex: 1;
+    }
+
+    .box4 {
+        padding: 12px 32px;
+        background-color: var(--accent-color-primary);
+        border-radius: 100px;
+    }
+
+    .box5 {
+        position: relative;
+        flex: 1;
+        background: rgba(81, 45, 83, 0.92);
+        flex-basis: 60%;
+        border-radius: 8%;
+        overflow: hidden;
+        padding: 12px 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .background-clip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: overlay;
+    }
+    .box6 {
+        display: flex;
+        flex: 1;
+        flex-basis: 40%;
+        gap: 1.5rem;
+    }
+
+    .innerbox1 {
+        position: relative;
+        background-color: #5D0260;
+        flex-basis: 50%;
+        border-radius: 10%;
+        overflow: hidden;
+    }
+
+
+    .innerbox2 {
+        flex-basis: 50%;
+        background-color: var(--accent-color-secondary);
+        border-radius: 10%;
+        padding: 12px 32px;
+    }
+
+    .innerbox1 .background-clip{
+        mix-blend-mode: luminosity;
+    }
+}
+

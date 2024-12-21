@@ -1,0 +1,83 @@
+@import '../../index.css';
+
+.instructor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 100px;
+    max-width: 200px;
+    margin: 12px;
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.instructor-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.instructor-card p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    font-family: var(--text-primary);
+    position: absolute;
+    bottom: -40px;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.instructor-card .rating {
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    gap: 4px;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.instructor-card .star {
+    width: 1rem;
+    height: 1rem;
+}
+
+.instructor-card .star.empty {
+    filter: grayscale(100%);
+}
+
+.instructor-card:hover {
+    transform: scale(1.05);
+    background-color: var(--accent-color-secondary);
+}
+
+.instructor-card:hover .profile {
+    filter: brightness(50%) contrast(100%);
+}
+
+.instructor-card:hover p {
+    bottom: 40px;
+}
+
+.instructor-card:hover .rating {
+    bottom: 20px;
+}
+
+
+
+@media (max-width: 767.98px) {
+    .instructor-card p {
+        font-size: 1.25rem;
+    }
+
+    .instructor-card .star {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+}
